@@ -1,7 +1,15 @@
 # pure-lua-zset   
 a lua zset(sorted set) looks like redis zset.   
 core source code comes from redis.   
+
+1)support for user defined sort function . multisort becomes easier.  
+2)any lua variable type exceppt for nil can be key/value.  
+3)value can't be modified any more as soon as added to zset in case of breaking the data structure.    
+4)when elements have the same score , the ealier added the higher priority.
+5)ranking (params/return) from 1 to n.  
 It will be greatly appreciated if you can submit some bug.  
+
+
 
 redis zset的纯lua修改版,适合在lua代码中用来做排行榜,删掉了部分函数  
 1)支持自定义排序函数,可以很好的支持多字段排序  
