@@ -1,6 +1,6 @@
 # pure-lua-zset
-a lua zset(sorted set) looks like redis zset
-
+a lua zset(sorted set) looks like redis zset.
+core source code comes from redis.
 
 redis zset的纯lua修改版,适合在lua代码中用来做排行榜,删掉了部分函数  
 
