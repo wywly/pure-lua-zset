@@ -221,7 +221,6 @@ function zset_meta:add(key , value)
     assert(key ~= nil and value ~= nil)  
     local old = self["objs"][key]  
     if old then  
-        if old == value then return end  
         self.sl:delete(key , old)  
     end  
     self.sl:insert(key , value)  
